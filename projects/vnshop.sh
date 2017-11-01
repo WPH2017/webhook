@@ -5,7 +5,7 @@ WEB_PATH_CLIENT='/home/wwwroot/git.wphkj.cn/vnshop/client'
 WEB_USER='www'
 WEB_USERGROUP='www'
 # we can do 
-echo "Start deployment vx.itnote.cn"
+echo "Start deployment git.wphkj.cn"
 cd $WEB_PATH
 echo "pulling source code..."
 # git reset --hard origin/release
