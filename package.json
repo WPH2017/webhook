@@ -1,0 +1,26 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "description": "webhook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WPH2017/webhook.git"
+  },
+  "keywords": [
+    "webhook"
+  ],
+  "author": "WPH2017",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WPH2017/webhook/issues"
+  },
+  "homepage": "https://github.com/WPH2017/webhook#readme",
+  "dependencies": {
+    "github-webhook-handler": "^0.6.0",
+    "shelljs": "^0.7.8"
+  }
+}
