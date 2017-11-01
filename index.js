@@ -1,5 +1,6 @@
 const http = require('http')
-const shell = require('shelljs')
+    // const shell = require('shelljs')
+const exec = require('child_process').exec
 const createHandler = require('github-webhook-handler')
 const handler = createHandler({ path: '/webhook', secret: 'vnshop' })
     // 上面的 secret 保持和 GitHub 后台设置的一致
@@ -13,13 +14,13 @@ const projectHandler = (event, action) => {
     const branch = event.payload.ref
     if (projects.includes(project)) {
         console.log(new Date(), `Received a ${action} event for ${project} to ${branch}`)
-        shell.chmod(755, '/home/wwwroot/git.wphkj.cn/vnshop')
-        shell.chmod(755, '/home/wwwroot/git.wphkj.cn/vnshop/client')
-        shell.exec(`sh ./projects/${project}.sh`, (code, stdout, stderr) => {
-            console.log(new Date(), 'Exit code:', code)
-                // console.log(new Date(), 'Program output:', stdout)
-            console.log(new Date(), '执行完毕！错误信息：？', stderr)
-        })
+
+        exec(`./projects/${project}.sh`)
+            // shell.exec(`sh ./projects/${project}.sh`, (code, stdout, stderr) => {
+            //     console.log(new Date(), 'Exit code:', code)
+            //         // console.log(new Date(), 'Program output:', stdout)
+            //     console.log(new Date(), '执行完毕！错误信息：？', stderr)
+            // })
 
     }
 }
