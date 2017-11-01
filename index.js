@@ -13,6 +13,8 @@ const projectHandler = (event, action) => {
     const branch = event.payload.ref
     if (projects.includes(project)) {
         console.log(new Date(), `Received a ${action} event for ${project} to ${branch}`)
+        shell.chmod(755, '/home/wwwroot/git.wphkj.cn/vnshop')
+        shell.chmod(755, '/home/wwwroot/git.wphkj.cn/vnshop/client')
         shell.exec(`sh ./projects/${project}.sh`, (code, stdout, stderr) => {
             console.log(new Date(), 'Exit code:', code)
                 // console.log(new Date(), 'Program output:', stdout)
