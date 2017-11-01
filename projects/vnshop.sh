@@ -15,5 +15,5 @@ git checkout master
 echo "changing permissions..."
 cd $WEB_PATH_CLIENT
 npm run build
-chown -R $WEB_USER:$WEB_USERGROUP $WEB_PATH_CLIENT
+#chown -R $WEB_USER:$WEB_USERGROUP $WEB_PATH_CLIENT
 echo "Finished."
