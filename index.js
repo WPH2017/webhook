@@ -1,6 +1,6 @@
 const http = require('http')
     // const shell = require('shelljs')
-const exec = require('child_process').exec
+const exec = require('child_process').execFile
 const createHandler = require('github-webhook-handler')
 const handler = createHandler({ path: '/webhook', secret: 'vnshop' })
     // 上面的 secret 保持和 GitHub 后台设置的一致
