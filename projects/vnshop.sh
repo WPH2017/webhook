@@ -1,5 +1,5 @@
-#!/bin/bash
- 
+﻿#!/bin/bash
+
 WEB_PATH='/home/wwwroot/vnshop/'
 WEB_PATH_CLIENT='/home/wwwroot/vnshop/client'
 WEB_USER='www'
