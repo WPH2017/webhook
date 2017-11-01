@@ -11,8 +11,8 @@ echo "pulling source code..."
 # git reset --hard origin/release
 # git clean -f
 # 把项目拉取到最新
-git pull
-git checkout master
+git pull origin master
+# git checkout master
 echo "changing permissions..."
 # 切换到client里面
 cd $WEB_PATH_CLIENT
