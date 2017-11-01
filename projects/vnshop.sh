@@ -1,4 +1,4 @@
-ï»¿#!/bin/bash
+#!/bin/bash
 
 WEB_PATH='/home/wwwroot/vnshop/'
 WEB_PATH_CLIENT='/home/wwwroot/vnshop/client'
@@ -10,13 +10,13 @@ cd $WEB_PATH
 echo "pulling source code..."
 # git reset --hard origin/release
 # git clean -f
-# æŠŠé¡¹ç›®æ‹‰å–åˆ°æœ€æ–°
+# °ÑÏîÄ¿À­È¡µ½×îĞÂ
 git pull origin master
 # git checkout master
 echo "changing permissions..."
-# åˆ‡æ¢åˆ°clienté‡Œé¢
+# ÇĞ»»µ½clientÀïÃæ
 cd $WEB_PATH_CLIENT
-# æŠŠvueé¡¹ç›®ç¼–è¯‘
+# °ÑvueÏîÄ¿±àÒë
 npm run build
 chown -R $WEB_USER:$WEB_USERGROUP $WEB_PATH_CLIENT
 echo "Finished."
