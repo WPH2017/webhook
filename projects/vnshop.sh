@@ -1,7 +1,7 @@
 #!/bin/bash
  
-WEB_PATH='/home/wwwroot/git.wphkj.cn/vnshop/'
-WEB_PATH_CLIENT='/home/wwwroot/git.wphkj.cn/vnshop/client'
+WEB_PATH='/home/wwwroot/vnshop/'
+WEB_PATH_CLIENT='/home/wwwroot/vnshop/client'
 WEB_USER='www'
 WEB_USERGROUP='www'
 # we can do 
